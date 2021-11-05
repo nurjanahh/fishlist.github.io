@@ -1,0 +1,15 @@
+<h1> Fish list</h1>
+
+<table>
+    <tr>
+        <th>Items</th> 
+    </tr>
+    {% for types in type %}
+    <tr>
+        <td>{{types.title}}</td>
+    </tr>
+    {% empty %}
+    <h3>No items in List</h3>
+    <a href=""> Add New Item </a>
+    {% endfor %}
+</table>
